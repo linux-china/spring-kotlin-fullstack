@@ -35,7 +35,7 @@ tasks {
 		from(project(":frontend").projectDir.resolve("src/main/resources")) {
 			into("static")
 		}
-		from(project(":frontend").buildDir.resolve("libs/spring-kotlin-fullstack-frontend.js"))  {
+		from(project(":frontend").buildDir.resolve("distributions/frontend-1.0.0-SNAPSHOT.js"))  {
 			into("static")
 		}
 	}
