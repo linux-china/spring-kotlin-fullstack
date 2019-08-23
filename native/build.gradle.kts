@@ -13,6 +13,14 @@ kotlin {
             executable()
         }
     }
+
+    sourceSets {
+        val nativeMain by getting {
+            dependencies {
+                implementation(project(":shared"))
+            }
+        }
+    }
 }
 
 tasks.withType<Wrapper> {
