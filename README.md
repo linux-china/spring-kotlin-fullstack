@@ -15,6 +15,10 @@ Spring WebFlux Kotlin fullstack example with Kotlin/JS for frontend instead of J
 
 * Shared objects
 
+### Native
+
+* Native Debug for IntelliJ: https://plugins.jetbrains.com/plugin/12775-native-debug-for-intellij
+
 # References
 
 * Kotlin multiplatform support http://kotlinlang.org/docs/reference/multiplatform.html
