@@ -12,6 +12,14 @@ kotlin {
         browser()
         nodejs()
     }
+    
+    macosX64("shared") {
+        binaries {
+          sharedLib {
+            baseName = "shared"
+          }
+        }
+      }
 
     sourceSets {
         commonMain {
