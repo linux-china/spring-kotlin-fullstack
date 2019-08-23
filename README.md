@@ -34,6 +34,11 @@ Please include following in your build.gradle.kts. JUnit 5 not support yet.
         }
  } 
 ```
+
+# IntelliJ IDEA Ultra Edition Integration
+
+* Change run & build to Gradle
+
 # References
 
 * Kotlin multiplatform support http://kotlinlang.org/docs/reference/multiplatform.html
