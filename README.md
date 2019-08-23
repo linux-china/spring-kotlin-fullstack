@@ -19,6 +19,21 @@ Spring WebFlux Kotlin fullstack example with Kotlin/JS for frontend instead of J
 
 * Native Debug for IntelliJ: https://plugins.jetbrains.com/plugin/12775-native-debug-for-intellij
 
+# Unit test with Java
+Please include following in your build.gradle.kts. JUnit 5 not support yet.
+
+```
+ sourceSets {
+ 
+       getByName("jvmTest").apply {
+            dependencies {
+                implementation(kotlin("test"))
+                implementation(kotlin("test-junit"))
+                implementation("junit:junit:4.12")
+            }
+        }
+ } 
+```
 # References
 
 * Kotlin multiplatform support http://kotlinlang.org/docs/reference/multiplatform.html
