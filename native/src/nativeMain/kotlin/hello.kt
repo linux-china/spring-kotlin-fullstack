@@ -1,3 +1,6 @@
+import common.User
+
 fun main() {
-    println("Hello Kotlin/Native!")
+    val user = User("libing", "Chen")
+    println("Hello ${user.firstName}, Welcome to Kotlin/Native!")
 }
