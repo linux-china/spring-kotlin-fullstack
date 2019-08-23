@@ -7,8 +7,8 @@ class UserTest {
     @Test
     fun test() {
         assertEquals(
-                "User(firstName=John, lastName=Doe)",
-                User("John", "Doe").toString()
+            "User(firstName=John, lastName=Doe)",
+            User("John", "Doe").toString()
         )
     }
 }
