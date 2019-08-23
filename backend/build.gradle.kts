@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-	val coroutinesVersion = "1.3.0-RC2"
+	val coroutinesVersion = "1.3.0"
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
