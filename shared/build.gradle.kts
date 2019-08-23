@@ -12,14 +12,14 @@ kotlin {
         browser()
         nodejs()
     }
-    
+
     macosX64("shared") {
         binaries {
-          sharedLib {
-            baseName = "shared"
-          }
+            sharedLib {
+                baseName = "shared"
+            }
         }
-      }
+    }
 
     sourceSets {
         commonMain {
@@ -41,7 +41,8 @@ kotlin {
         getByName("jvmTest").apply {
             dependencies {
                 implementation(kotlin("test"))
-                implementation(kotlin("test-junit"))
+                implementation(kotlin("test-junit5"))
+                implementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
             }
         }
         getByName("jsMain").apply {
