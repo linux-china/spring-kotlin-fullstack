@@ -41,8 +41,8 @@ kotlin {
         getByName("jvmTest").apply {
             dependencies {
                 implementation(kotlin("test"))
-                implementation(kotlin("test-junit5"))
-                implementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
+                implementation(kotlin("test-junit"))
+                implementation("junit:junit:4.12")
             }
         }
         getByName("jsMain").apply {
