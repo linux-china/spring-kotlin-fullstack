@@ -1,6 +1,6 @@
 package common
 
-import org.junit.jupiter.api.Test
+import org.junit.Test
 
 /**
  * user junit 5 test
@@ -11,7 +11,7 @@ class UserJunitTest {
 
     @Test
     fun testOperation() {
-        val user = User("libingsww", "chen")
+        val user = User("libing", "chen")
         println("Hi ${user.firstName}")
     }
 }
