@@ -12,4 +12,4 @@ pluginManagement {
 	}
 }
 
-include("frontend", "backend", "shared")
+include("frontend", "backend", "shared","native")
