@@ -3,8 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm")
     kotlin("plugin.spring")
-    id("org.springframework.boot") version "2.2.1.RELEASE"
-    id("io.spring.dependency-management") version "1.0.8.RELEASE"
+    id("org.springframework.boot") version "2.2.6.RELEASE"
+    id("io.spring.dependency-management") version "1.0.9.RELEASE"
 }
 
 repositories {
@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    val coroutinesVersion = "1.3.2"
+    val coroutinesVersion = "1.3.5"
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
@@ -36,7 +36,7 @@ tasks {
         from(project(":frontend").projectDir.resolve("src/main/resources")) {
             into("static")
         }
-        from(project(":frontend").buildDir.resolve("distributions/frontend-1.0.0-SNAPSHOT.js")) {
+        from(project(":frontend").buildDir.resolve("distributions/frontend.js")) {
             into("static")
         }
     }
